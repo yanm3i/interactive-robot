@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>COM1008 Assignment 2</title>
+  <meta name="author" content="Emily Kong">
+  <link rel="stylesheet" href="./css/canvas_style.css">
+</head>
+
+<body>
+  <div id="canvasDiv">
+  
+  <canvas id="robot_canvas" ></canvas>
+  </div>
+  <div id="buttons">
+    <button name = "on_off_button" id = "on_off_button">On/Off</button>
+    <button name = "charge_button" id = "charge_button">Charge</button>
+  </div>
+  
+  <div id="instructions">
+    <h2> COM1008 Assignment 2 </h2>
+    <p>Robot should be tested on a web server (e.g Live Server with VSC) to function fully. 
+    <br>Press the <span style = "color:rgb(0, 187, 230)">On/Off</span> button to turn on the robot. </p>
+    <h4>Actions</h4>
+    <p>
+      It is suggested to wait a couple seconds between actions for animations to complete.
+      <ol>
+        <li>Press anywhere other than the arms and arrows to shoot a laser</li>
+        <li>Click on either the right arrow or left arrow to make the robot move to that side of the screen </li>
+        <li>Click on either arm of the robot to make it spin</li>
+      </ol>
+      Once 3/3 actions are performed, the robot will power off. Actions can only be performed while the robot is on and it will only turn fully back on again once the <span style="color:rgb(132, 0, 255)">Charge</span> button has been pressed.
+      Turning the robot on and off will maintain the amount of actions left to perform.
+      <br>
+      <br>You can recharge the robot after action 1, to which the battery will be reset to perform 3 more actions.
+      <br>
+    </p>
+    <p>My program is optimised to be scaled based on the window size, so the canvas and robot would be appropriately resized based on the device's size. This would make it appropriate and visible enough to use on most if not any device screen. 
+      However, if the window size is altered during testing, the web server would need to be refreshed for actions to function as intended. </p>
+  
+  </div>
+
+  <script src="./js/robot_controls.js"></script>
+</body>
+
+</html>

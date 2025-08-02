@@ -1,0 +1,41 @@
+/* Author: Emily Kong */
+canvas {
+    float: left;
+    border: 1px solid rgb(56, 2, 71);
+    width: 82%;
+    height: 82%;
+}
+#canvasDiv {
+    padding-left: 2%;
+}
+
+#buttons {
+    float:left;
+    padding: 1%;
+    display:flex;
+}
+
+#on_off_button {
+    font-size: 140%;
+    padding: 10%;
+    color: rgb(0, 187, 230);
+
+}
+
+#charge_button {
+    
+    font-size: 140%;
+    padding: 10%;
+    color: blueviolet;
+}
+
+#instructions {
+    padding: 1%;
+    float:inline-end;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#body {
+    display: inline-block;
+}
+
